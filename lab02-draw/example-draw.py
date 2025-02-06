@@ -77,7 +77,7 @@ arcade.draw_rectangle_filled(250, 440, 20, 30, arcade.color.BLACK)
 # Draw 2nd level door
 arcade.draw_rectangle_outline(190, 310, 30, 60, arcade.color.BONE, 5)
 
-# --- Finish drawing ---
+# --- Finish drawing --
 arcade.finish_render()
 
 # Keep the window up until someone closes it.
