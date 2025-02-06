@@ -5,6 +5,7 @@ language and the Arcade library.
 
 # Import the "arcade" library
 import arcade
+from pyglet.libs.win32.constants import lDefaultTab
 
 # Open up a window.
 # From the "arcade" library, use a function called "open_window"
@@ -19,12 +20,24 @@ arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
 arcade.start_render()
 
 # Draw the grass
-arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
+arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.ARSENIC)
 
 # --- Draw the barn ---
 
+# Draw the clouds
+arcade.draw_circle_filled(600, 450, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(550, 475, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(600, 482, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(650, 475, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(700, 450, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(650, 425, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(600, 417, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(550, 425, 50, arcade.color.OLD_LACE)
+arcade.draw_circle_filled(500, 450, 50, arcade.color.OLD_LACE)
+
+
 # Barn cement base
-arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)
+arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.GREEN)
 
 # Bottom half
 arcade.draw_lrtb_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)
@@ -63,27 +76,6 @@ arcade.draw_rectangle_filled(250, 440, 20, 30, arcade.color.BLACK)
 
 # Draw 2nd level door
 arcade.draw_rectangle_outline(190, 310, 30, 60, arcade.color.BONE, 5)
-
-# --- Draw the tractor ---
-
-# Draw the engine
-arcade.draw_rectangle_filled(600, 120, 140, 70, arcade.color.GRAY)
-arcade.draw_rectangle_filled(590, 105, 90, 40, arcade.color.BLACK)
-
-# Draw the smoke stack
-arcade.draw_rectangle_filled(580, 175, 10, 40, arcade.color.BLACK)
-
-# Back wheel
-arcade.draw_circle_filled(490, 110, 50, arcade.color.BLACK)
-arcade.draw_circle_filled(490, 110, 45, arcade.color.BLACK_OLIVE)
-arcade.draw_circle_filled(490, 110, 35, arcade.color.OLD_LACE)
-arcade.draw_circle_filled(490, 110, 10, arcade.color.RED)
-
-# Front wheel
-arcade.draw_circle_filled(650, 90, 30, arcade.color.BLACK)
-arcade.draw_circle_filled(650, 90, 25, arcade.color.BLACK_OLIVE)
-arcade.draw_circle_filled(650, 90, 18, arcade.color.OLD_LACE)
-arcade.draw_circle_filled(650, 90, 5, arcade.color.RED)
 
 # --- Finish drawing ---
 arcade.finish_render()
